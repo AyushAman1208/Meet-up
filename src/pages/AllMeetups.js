@@ -21,6 +21,7 @@ function AllMeetups() {
 
       }
       meetups.push(meetup)
+      console.log(meetups)
     }
     setIsLoading(false)
     setLoadedMeetups(meetups);
@@ -35,7 +36,6 @@ function AllMeetups() {
   
   return (
     <>
-      <h2>All Meetups</h2>
       <MeetupList meetup={loadedMeetups} />
     </>
   );

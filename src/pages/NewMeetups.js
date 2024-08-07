@@ -22,7 +22,6 @@ function NewMeetups() {
   
   return (
     <div>
-      New Meetups
       <AddMeetups addMeetUp={addMeetupHandler}/>
     </div>
     

@@ -1,9 +1,8 @@
 import React from 'react'
-import classes from './Cards.module.css'
 
 function Cards(props) {
   return (
-    <div className={classes.cards}>
+    <div className='bg-red-200'>
         <div>{props.children}</div>
         
       

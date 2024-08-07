@@ -1,6 +1,5 @@
 import React from "react";
 import Cards from "../../ui/Cards";
-import classes from './AddMeetups.module.css'
 import { useRef } from "react";
 
 function AddMeetups(props) {
@@ -26,6 +25,10 @@ function AddMeetups(props) {
         }
         
         props.addMeetUp(meetupData);
+        titleInputRef.current.value="";
+        imageInputRef.current.value="";
+        addressInputRef.current.value="";
+        descriptionInputRef.current.value="";
         
 
 
@@ -34,7 +37,7 @@ function AddMeetups(props) {
     
   return (
     <Cards>
-      <form action="#" className={classes.form} onSubmit={submitHandler}>
+      <form action="#"  className="p-10 bg-red-100" onSubmit={submitHandler}>
         <div>
           <label htmlFor="title">Title</label><br />
           <input type="text" name="title" required id="title" ref={titleInputRef}/>

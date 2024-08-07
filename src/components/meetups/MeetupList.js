@@ -1,13 +1,12 @@
 import React from "react";
 import MeetupItem from "./MeetupItem";
-import classes from './MeetupList.module.css'
 
 function MeetupList(props) {
     console.log(props.meetup)
   return (
     
     
-      <ul className={classes.lists}>
+      <ul className="flex flex-col gap-y-3 p-5 bg-red-100">
         {props.meetup.map(meetup => 
           <MeetupItem
             key={meetup.id}
